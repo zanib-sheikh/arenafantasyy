@@ -396,10 +396,10 @@ function slideTo(index) {
       {t("scoringSystem.description")}
     </p>
 
-   {/* Centered Button Container */}
+   {/* Centered Button Container */}<a href="#signup-form">
 <div className="flex lg:justify-start lg:items-start justify-center items-center ">
   {/* Stay Updated Button */}
-   <a href="#signup-form">
+   
   <button className="mt-6 flex items-center mx-auto px-2 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-black rounded-full text-gray-900 font-semibold text-sm shadow-md transition duration-300">
     {t("scoringSystem.stayUpdated")}
     <span 
@@ -409,9 +409,9 @@ function slideTo(index) {
        ➙
     </span>
   </button>
-     </a>
+    
 </div>
-
+ </a>
 
   
   
