@@ -24,6 +24,7 @@ const Footer = () => {
 
      {/* Questions or Suggestions */}
 <div className="flex flex-col items-center">
+  <a href="#signup-form">
 <button 
   className={`mt-6 flex items-center justify-center px-2 py-2 bg-white hover:bg-gray-200 hover:text-gray-800 border-2 border-b-4 border-black rounded-full text-gray-500 font-semibold text-sm shadow-md transition duration-300
     ${i18n.language === "ar" ? "w-full md:w-auto px-4 justify-start" : "justify-center"}`} // Adjust width, padding, and text alignment for Arabic
@@ -43,7 +44,7 @@ const Footer = () => {
       ➙
     </span>
   )}
-</button>
+</button> </a>
 
 
 
