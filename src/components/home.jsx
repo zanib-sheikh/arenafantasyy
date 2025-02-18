@@ -142,6 +142,7 @@ function slideTo(index) {
   </p>
 
   {/* Button */}
+  <a href="#signup-form">
 <button
   className={`mt-6 lg:mt-16 flex mx-auto lg:mx-0 items-center  px-2 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-b-4 border-black rounded-full text-gray-900 font-semibold text-sm shadow-lg transition duration-300 ${
     i18n.language === "ar" ? "mr-auto sm:mx-auto " : "ml-auto sm:mx-auto"
@@ -156,6 +157,7 @@ function slideTo(index) {
      ➙
   </span>
 </button>
+    </a>
 
 </div>
 
@@ -288,6 +290,7 @@ function slideTo(index) {
         </div>
 
        {/* Button */}
+         <a href="#signup-form">
 <button
   className={`mt-6 flex items-center px-2 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-b-4 border-black rounded-full text-gray-900 font-semibold text-sm shadow-md transition duration-300 ${
     i18n.language === "ar" ? "lg:ml-auto" : "lg:mr-auto"
@@ -301,6 +304,7 @@ function slideTo(index) {
        ➙
     </span>
 </button>
+           </a>
       </div>
     </div>
   </div>
@@ -395,6 +399,7 @@ function slideTo(index) {
    {/* Centered Button Container */}
 <div className="flex lg:justify-start lg:items-start justify-center items-center ">
   {/* Stay Updated Button */}
+   <a href="#signup-form">
   <button className="mt-6 flex items-center mx-auto px-2 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-black rounded-full text-gray-900 font-semibold text-sm shadow-md transition duration-300">
     {t("scoringSystem.stayUpdated")}
     <span 
@@ -404,6 +409,7 @@ function slideTo(index) {
        ➙
     </span>
   </button>
+     </a>
 </div>
 
 
@@ -679,6 +685,7 @@ function slideTo(index) {
         ? "احصل على ترقيات مجانية في المستويات ومكافآت مثيرة"
         : "Earn Free Tier Upgrades and Exciting Rewards."}
     </h3>
+     <a href="#signup-form">
     <button className="mt-2 flex items-center px-2  py-1 bg-white hover:bg-green-200 hover:text-black border-2 border-b-4 border-black rounded-full text-gray-900 font-semibold text-sm shadow-md transition duration-300">
       {i18n.language === "ar" ? "قم بالتسجيل في النسخة التجريبية" : "Sign Up For Our Beta"}
       <span 
@@ -687,7 +694,7 @@ function slideTo(index) {
     >
        ➙
     </span>
-    </button>
+    </button></a>
 
     <h1 className="text-green-600 font-extrabold text-md mt-8">
       {i18n.language === "ar"
@@ -814,6 +821,7 @@ function slideTo(index) {
 
   {/* Button at the End */}
   <div className="flex justify-center mt-8">
+     <a href="#signup-form">
     <button className="mt-4 flex items-center px-3 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-b-4 border-black rounded-full text-gray-900 font-semibold text-sm shadow-md transition duration-300">
       {i18n.language === "ar" ? "قم بالتسجيل في النسخة التجريبية" : "Sign Up For Our Beta"}
       <span 
@@ -822,7 +830,7 @@ function slideTo(index) {
     >
       ➙
     </span>
-    </button>
+    </button> </a>
   </div>
 </div>
 
@@ -839,7 +847,7 @@ function slideTo(index) {
 
 
 {/* FORM*/}
-<div className="w-full flex justify-center my-12 px-4 py-4">
+<div  id="signup-form" className="w-full flex justify-center my-12 px-4 py-4">
   <div
     className="w-full sm:hidden  max-w-4xl  bg-cover bg-center bg-gradient-to-br from-gray-950 via-green-900 to-green-700 rounded-3xl overflow-hidden lg:flex p-4 relative"
     style={{ height: "450px" }}
