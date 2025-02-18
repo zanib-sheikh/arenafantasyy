@@ -38,17 +38,19 @@ const Navbar = () => {
   </div>
 
   {/* Add gap between "فوائد الاشتراك" and the button in Arabic */}
-  <div className={`hidden md:block ${i18n.language === "ar" ? "ml-8" : "mr-8"}`}>
+ <div className={`hidden md:block ${i18n.language === "ar" ? "ml-8" : "mr-8"}`}>
+  <a href="#signup-form">
     <button className="flex items-center px-3 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-b-4 border-black rounded-full text-black font-semibold text-sm shadow-lg transition duration-300">
       {t("navbar.signup")}
-      <span 
-        className={`mr-2  flex items-center justify-center w-8 h-8 bg-green-800 text-white rounded-full shadow-inner 
-        ${i18n.language === "ar" ? "rotate-180 ml-0" : "ml-2 mr-0"}`}
+      <span
+        className={`mr-2 flex items-center justify-center w-8 h-8 bg-green-800 text-white rounded-full shadow-inner 
+          ${i18n.language === "ar" ? "rotate-180 ml-0" : "ml-2 mr-0"}`}
       >
-         ➙
+        ➙
       </span>
     </button>
-  </div>
+  </a>
+</div>
 </div>
 
 
@@ -74,15 +76,17 @@ const Navbar = () => {
           <a href="#subscription" className="hover:text-[#368146] text-white transition duration-300">
             {t("navbar.subscription")}
           </a>
-          <button className="flex items-center px-2 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-b-4 border-black rounded-full text-black font-semibold text-sm shadow-md transition duration-300">
-            {t("navbar.signup")}
-            <span 
-              className={`mr-2 ml-2 flex items-center justify-center w-8 h-8 bg-green-800 text-white rounded-full shadow-inner 
-              ${i18n.language === "ar" ? "rotate-180 ml-0" : "ml-2 mr-0"}`}
-            >
-              ➙
-            </span>
-          </button>
+           <a href="#signup-form">
+    <button className="flex items-center px-3 py-2 bg-white hover:bg-gray-200 hover:text-black border-2 border-b-4 border-black rounded-full text-black font-semibold text-sm shadow-lg transition duration-300">
+      {t("navbar.signup")}
+      <span
+        className={`mr-2 flex items-center justify-center w-8 h-8 bg-green-800 text-white rounded-full shadow-inner 
+          ${i18n.language === "ar" ? "rotate-180 ml-0" : "ml-2 mr-0"}`}
+      >
+        ➙
+      </span>
+    </button>
+  </a>
         </div>
       </nav>
     </div>
